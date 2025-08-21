@@ -1,1 +1,20 @@
-[ ]
+[ {
+  "baseItem" : {
+    "id" : "_m5FSMH5JEfCTg-HTYLHZeQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_i10REH5JEfCTg-HTYLHZeQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_zNQ2EH5IEfCTg-HTYLHZeQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_i10REH5JEfCTg-HTYLHZeQ - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
