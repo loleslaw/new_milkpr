@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_niuOkH8ZEfCisq_Xwl1E0g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_niuOkX8ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+  <contextParameter xmi:id="_niuOkn8ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_niuOk38ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_niuOlH8ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_niuOlX8ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Fwkjg142Kugq7s49BVG98bdo4Yl2NpSG3RChK1/dr4zB7eT2"/>
+  <contextParameter xmi:id="_niuOln8ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.30.3.21"/>
+  <contextParameter xmi:id="_niuOl38ZEfCisq_Xwl1E0g" comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_85E9kH8YEfCisq_Xwl1E0g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_85E9kX8YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lab"/>
+  <contextParameter xmi:id="_85E9kn8YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_85E9k38YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_85E9lH8YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_85E9lX8YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ufPAVL/Trsb7k4ZVtYgw/VaoyCXQItP4aJLuyrbIFxYbvl4z"/>
+  <contextParameter xmi:id="_85E9ln8YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.30.3.21"/>
+  <contextParameter xmi:id="_85E9l38YEfCisq_Xwl1E0g" comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

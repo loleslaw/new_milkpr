@@ -1,0 +1,29 @@
+{
+  "itemId" : "_JPLOEH5JEfCTg-HTYLHZeQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_niXpQH8ZEfCisq_Xwl1E0g",
+    "parameterList" : [ {
+      "id" : "_niuOkX8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Schema"
+    }, {
+      "id" : "_niuOkn8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Login"
+    }, {
+      "id" : "_niuOk38ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Port"
+    }, {
+      "id" : "_niuOlH8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Database"
+    }, {
+      "id" : "_niuOlX8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Password"
+    }, {
+      "id" : "_niuOln8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Server"
+    }, {
+      "id" : "_niuOl38ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_AdditionalParams"
+    } ]
+  } ]
+}
