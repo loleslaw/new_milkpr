@@ -29,7 +29,7 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_JPLOEH5JEfCTg-HTYLHZeQ - milk_sample",
+    "id" : "_BL7dkH8_EfCTO_YVdZ_FiA - metadata",
     "version" : "Latest",
     "type" : "schema"
   }, {
@@ -38,6 +38,10 @@
     "type" : "schema"
   }, {
     "id" : "_mnYSkH8XEfCisq_Xwl1E0g - job_stats",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_zNQ2EH5IEfCTg-HTYLHZeQ - samples",
     "version" : "Latest",
     "type" : "schema"
   } ]

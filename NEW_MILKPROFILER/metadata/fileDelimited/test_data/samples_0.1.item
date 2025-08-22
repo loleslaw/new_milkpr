@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_9wRPAH8-EfCTO_YVdZ_FiA" name="samples" dataPackage="_9wRPAX8-EfCTO_YVdZ_FiA" Server="Localhost 127.0.0.1" FilePath="C:/_PROMITY/02.PROJEKTY/2025 MilkProfiler/Baza danych/example data/sample.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_9wRPAX8-EfCTO_YVdZ_FiA" name="default" dataManager="_9wRPAH8-EfCTO_YVdZ_FiA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9wRPAn8-EfCTO_YVdZ_FiA" id="_sZ4K8H8-EfCTO_YVdZ_FiA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPA38-EfCTO_YVdZ_FiA" label="supplier_id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPBH8-EfCTO_YVdZ_FiA" label="id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPBX8-EfCTO_YVdZ_FiA" label="created" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPBn8-EfCTO_YVdZ_FiA" label="milk_sample_frozen" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPB38-EfCTO_YVdZ_FiA" label="name" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPCH8-EfCTO_YVdZ_FiA" label="notes" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPCX8-EfCTO_YVdZ_FiA" label="sampled" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPCn8-EfCTO_YVdZ_FiA" label="animal_id" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPC38-EfCTO_YVdZ_FiA" label="source_id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPDH8-EfCTO_YVdZ_FiA" label="milk_sample_count" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPDX8-EfCTO_YVdZ_FiA" label="newest_analysis_time" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9wRPDn8-EfCTO_YVdZ_FiA" label="oldest_analysis_time" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

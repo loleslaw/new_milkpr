@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_BL8EoH8_EfCTO_YVdZ_FiA" dataPackage="_BL8EoX8_EfCTO_YVdZ_FiA"/>
+  <TalendMetadata:GenericPackage xmi:id="_BL8EoX8_EfCTO_YVdZ_FiA" dataManager="_BL8EoH8_EfCTO_YVdZ_FiA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_BL8Eon8_EfCTO_YVdZ_FiA" id="_BL5oYH8_EfCTO_YVdZ_FiA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Eo38_EfCTO_YVdZ_FiA" name="supplier_id" label="supplier_id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8EpH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8EpX8_EfCTO_YVdZ_FiA" name="id" label="id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Epn8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Ep38_EfCTO_YVdZ_FiA" name="created" label="created" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8EqH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8EqX8_EfCTO_YVdZ_FiA" name="milk_sample_frozen" label="milk_sample_frozen" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Eqn8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Eq38_EfCTO_YVdZ_FiA" name="name" label="name" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8ErH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8ErX8_EfCTO_YVdZ_FiA" name="notes" label="notes" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Ern8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Er38_EfCTO_YVdZ_FiA" name="sampled" label="sampled" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8EsH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8EsX8_EfCTO_YVdZ_FiA" name="animal_id" label="animal_id" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Esn8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Es38_EfCTO_YVdZ_FiA" name="source_id" label="source_id" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8EtH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8EtX8_EfCTO_YVdZ_FiA" name="milk_sample_count" label="milk_sample_count" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Etn8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8Et38_EfCTO_YVdZ_FiA" name="newest_analysis_time" label="newest_analysis_time" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8EuH8_EfCTO_YVdZ_FiA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BL8EuX8_EfCTO_YVdZ_FiA" name="oldest_analysis_time" label="oldest_analysis_time" length="29" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_BL8Eun8_EfCTO_YVdZ_FiA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
