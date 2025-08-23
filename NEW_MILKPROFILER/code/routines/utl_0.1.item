@@ -1,0 +1,316 @@
+package routines;
+
+import java.io.StringWriter;
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.TransformerFactoryConfigurationError;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+//import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+
+import routines.system.Document;
+
+
+public class utl {
+
+   public static void print(String message) {
+       if (message != null) {
+       	System.out.println( message );
+       } else {
+       	System.out.println(">>> null <<<");
+       }
+   }
+   public static void xprint( Object... values){
+	    for(Object c : values){
+	        System.out.print(c);
+	    }
+	    System.out.println();
+	}
+	public static void errprint(String message) {
+	    System.err.println("ERROR\t" + message);
+
+	}
+
+	public static void xerrprint( Object... values){
+		System.err.println("ERROR\t" );
+	    for(Object c : values){
+	        System.err.print(c);
+	    }
+	    System.err.println();
+	}
+   
+   public static boolean checkNumber(String message) {
+       try {
+    	   message = message.replaceAll(" ", "").replaceAll(",", ".");
+    	   double f = Double.parseDouble(message);
+    	   return true;
+       }
+       catch (Exception e) {
+    	   return false;
+       }
+   }
+   
+   public static void dprint(String message) {
+	   
+	 // message = "NOP";
+	   
+       if (message != null ) {
+    	   if (!message.equals("NOP")) {
+    		   System.out.println(">>> " + message  + "<<<");
+    	   }
+       } else {
+       	System.out.println(">>> null <<<");
+       }
+   }
+   
+   public static void clPrint(String message) {
+       if (message != null) {
+       	System.out.println( message);
+       } else {
+       	System.out.println(">>> null <<<");
+       }
+   }
+   
+   public static int s2i(String s) {
+   	try {
+   		return Integer.parseInt(s);
+   	} catch (Exception e) {
+   		return -1;
+   	}
+   }
+   
+   public static String getElement(int index, String values, String separator) {
+	   // returns index element from values separated by separator
+	   // this is 1 based list - first element has index = 1
+	   String vals[] = values.split(separator);
+	   
+	   try {
+		   return vals[index -1 ];
+	   }
+	   catch(Exception e) {
+		   return "";
+	   }
+   } 
+
+   public static String mapValue(String key, String headers , String values) {
+	   
+	   /*
+	   utl.print("H "+headers);
+	   utl.print("K "+key);
+	   utl.print("V "+values);
+	   */
+	  
+   //    String hdrs[] = headers.split(String.valueOf((char)30));
+   //    String vals[] = values.split(String.valueOf((char)30));
+       
+       
+       String hdrs[] = headers.split("~");
+       String vals[] = values.split("~");
+       
+       
+       for (int i = 0; i < vals.length; i++) {
+    	   try {
+    		   if (utl.ne(key) && hdrs[i].equals(key)) {
+    			   if (vals[i].toLowerCase().equals("null")) {
+    				   return "";
+    			   } else {
+    				   return vals[i];
+    			   }
+    		   }
+    	   } catch(Exception e) {
+    		   utl.print("MAP VALUE ERROR >: "+ e.getMessage());
+    		   utl.print("Key     >: " + key);
+    		   utl.print("Headers >: " + headers);
+    		   utl.print("Values  >: " + values);
+    	   }
+       }
+       return "";
+
+   }
+   public static String mapValue(String key, String headers , String values, String splitter) {
+	   
+	   /*
+	   utl.print("H "+headers);
+	   utl.print("K "+key);
+	   utl.print("V "+values);
+	   */
+	  
+   //    String hdrs[] = headers.split(String.valueOf((char)30));
+   //    String vals[] = values.split(String.valueOf((char)30));
+       
+       
+       String hdrs[] = headers.split(splitter);
+       String vals[] = values.split(splitter);
+       
+       
+       for (int i = 0; i < vals.length; i++) {
+    	   try {
+    		   if (utl.ne(key) && hdrs[i].equals(key)) {
+    			   if (vals[i].toLowerCase().equals("null")) {
+    				   return "";
+    			   } else {
+    				   return vals[i];
+    			   }
+    		   }
+    	   } catch(Exception e) {
+    		   utl.print("MAP VALUE ERROR >: "+ e.getMessage());
+    		   utl.print("Key     >: " + key);
+    		   utl.print("Headers >: " + headers);
+    		   utl.print("Values  >: " + values);
+    	   }
+       }
+       return "";
+
+   }
+
+   public static Date s2dt(String format, String data) {
+	   
+	   if (utl.ie(data) || data.equals("00000000")) {
+		   return null;
+	   }
+	   
+	   if (utl.ne(data.replaceAll("0", ""))) {
+		   try {
+			   return TalendDate.parseDate(format,data);
+		   } catch (Exception e)  {
+			   return null;
+		   }
+	   } else {
+		   return null;
+		  // return TalendDate.parseDate(format,data); // returns 30-11-0002 for 00000000
+	   }
+	   
+   }
+   public static Date s2d(String format, String data) {
+	   
+	   if (utl.ie(data) || data.equals("00000000")) {
+		   return null;
+	   }
+	   
+	   if (utl.ne(data.replaceAll("0", ""))) {
+		   try {
+			   return TalendDate.parseDate(format,data);
+		   } catch (Exception e)  {
+			   return null;
+		   }
+	   } else {
+		   return null;
+		  // return TalendDate.parseDate(format,data); // returns 30-11-0002 for 00000000
+	   }
+   }
+   public static Double s2d(String data) {
+	   try {
+		   return Double.parseDouble(data);
+		   
+	   } catch (Exception e) {
+		   return null;
+	   }
+   }
+	   
+   public static BigDecimal s2bd(String data) {
+	   try {
+		   return new BigDecimal(data);
+		   
+	   } catch (Exception e) {
+		   //utl.dprint("s2bd ERROR " + e.getLocalizedMessage());
+		   return null;
+	   }
+   }
+   
+   public static float s2float(String data) {
+	   try {
+		   return Float.parseFloat(data);
+		   
+	   } catch (Exception e) {
+		   utl.dprint("s2bd ERROR " + e.getLocalizedMessage());
+		   return 0;
+	   }
+   }
+   
+   public static String substring(String tekst, int start, int stop) {
+	   if (utl.ie(tekst)) {
+		   return "";
+	   }
+	   try {
+		   int pos;
+		   if (start + stop > tekst.length()) {
+			 //  utl.print("s" + tekst + " p: " + start + " k: " + stop + "=> " + tekst.substring(start, tekst.length()));
+			   return tekst.substring(start, tekst.length());
+		   } else {
+			 //  utl.print("s" + tekst + " p: " + start + " k: " + stop + "=> " + tekst.substring(start, start+stop));
+			   return tekst.substring(start, start+stop);
+		   }		   
+	   } catch( Exception e) {
+		   utl.print("utl substring : ");
+		   utl.print("tekst empty, start : " + start + " stop : " + stop + " org txt : >>>" + tekst + "<<<" );
+		   return "";
+	   }
+	   
+   }
+   
+   public static boolean ne(String tekst) {
+	   //return tekst!= null && !tekst.isEmpty() && !tekst.toUpperCase().equals("NULL");
+	   return tekst!= null && !tekst.isBlank() && !tekst.toUpperCase().equals("NULL");
+   }
+   
+   public static boolean ie(String tekst) {
+       //return tekst==null || tekst.isEmpty() || tekst.toUpperCase().equals("NULL");
+	   return tekst==null || tekst.isBlank() || tekst.toUpperCase().equals("NULL");
+   }
+   
+   public static String getRowKey(String data, String columns, String selColumns, String keys, String separator) {
+       /*
+        * generates a key value for a certain row basing on data
+        *  data - string of data                       (~41008467~$R01~~~118365~~~~~~~~E1R0ULY5~E1R0T679~RN02)
+        *  columns - string of all columns' names      (CHDRCOY~CHDRNUM~CRTABLE~POANUM~BLABEL~AGNTNUM01~AGNTNUM02~AGNTNUM03~)
+        * selColumns - string of columnt 2b selected   (CHDRNUM~CHDRCOY~CRTABLE~POANUM~BLABEL~AGNTNUM01~AGNTNUM02~AGTYPE01~PRCNT08~ZITEMLNK)
+        * keys - strng map of selColumns to create key (1~0~1~0~1~1~0~0~0~0)
+        * separator - a field separator (~)
+        * above mentioned example will generate a key for columns 1,3,6 (keys) -> means:
+        * CHDRNUM~CRTABLE~BLABEL~AGNTNUM01 with the value of 41008467;$R01;_;118365
+        * _ char replaces empty data value (in this case BLABEL column)
+        */
+       String result = "";
+       String[] keysArr = keys.split(separator);
+       String[] selColArr = keys.split(separator);
+       
+       for(int x=0; x < keysArr.length;x++) {
+           // select key column name
+           String keyName = keysArr[x].equals("1") ? getElement(x+1, selColumns, separator) : "";
+           String value = ne(keyName) ? mapValue(keyName , columns, data) : "";
+           value = ne(keyName) && ie(value) ? "_" : value;
+           result = ne(value)
+                       ? ie(result) 
+                               ? value 
+                               : result + ";" + value
+                       : result; 
+           
+       }
+       return result;
+       
+   }
+   
+   //parse finctions
+
+   
+
+
+   public static String DocToString(Document newDoc) throws TransformerFactoryConfigurationError, TransformerException {
+	    DOMSource domSource = new DOMSource((Node) newDoc);
+	    Transformer transformer = TransformerFactory.newInstance().newTransformer();
+	    StringWriter sw = new StringWriter();
+	    StreamResult sr = new StreamResult(sw);
+	    transformer.transform(domSource, sr);
+	    return sw.toString(); 
+	}
+    
+} 
