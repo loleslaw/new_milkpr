@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcontainer:TestContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:testcontainer="http://www.talend.com/testcontainer.ecore" xmi:id="_iA_KsIGSEfC35YKr3krbSA" defaultContext="Default" jobType="Standard" originalJobID="_h-G1-oGSEfC35YKr3krbSA" parentVersion="0.1">
+  <context xmi:id="_iA_KsYGSEfC35YKr3krbSA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_iA_KsoGSEfC35YKr3krbSA" comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_1WfgcH8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Ks4GSEfC35YKr3krbSA" comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WfgcX8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KtIGSEfC35YKr3krbSA" comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_1Wfgcn8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KtYGSEfC35YKr3krbSA" comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_1Wfgc38ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KtoGSEfC35YKr3krbSA" comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_1WfgdH8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Kt4GSEfC35YKr3krbSA" comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WfgdX8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KuIGSEfC35YKr3krbSA" comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:T1N8fTF0U6vhfzwBIuDcREosrG0ZYbdAXomZhOVlgoohJp6x" internalId="_1Wfgdn8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KuYGSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_1WgHgH8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KuoGSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WgHgX8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Ku4GSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:vtvY/FFGsrc5LOcY1utGQtGRsFIG09cJCm/4TO6AMA7JF97B" internalId="_1WgHgn8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KvIGSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_1WgHg38ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KvYGSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="0" internalId="_1WgHhH8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KvoGSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_1WgHhX8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Kv4GSEfC35YKr3krbSA" comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WgHhn8ZEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KwIGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_ZTONgH8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KwYGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_ZTONgX8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KwoGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Schema" prompt="connection_TalendDB_Schema?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="talend_jobs" internalId="_ZTONgn8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Kw4GSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Port" prompt="connection_TalendDB_Port?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_ZTONg38aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KxIGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_ZTONhH8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KxYGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:kIjzCpKF+AuDzXovzR+AFuLxpDBxES8QPMZcixgMtHyhSPbK" internalId="_ZTONhX8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_KxoGSEfC35YKr3krbSA" comment="" name="connection_TalendDB_Database" prompt="connection_TalendDB_Database?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_ZTONhn8aEfCisq_Xwl1E0g"/>
+    <contextParameter xmi:id="_iA_Kx4GSEfC35YKr3krbSA" comment="Tests MFA" name="testTemplateId" prompt="testTemplateId?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_Integer" value="2" internalId="_1xqmcH9OEfCTO_YVdZ_FiA"/>
+    <contextParameter xmi:id="_iA_KyIGSEfC35YKr3krbSA" comment="Samples MFA" name="sampleTemplateId" prompt="sampleTemplateId?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="1" internalId="_vOL_sIEtEfCbXqnIIhpM-w"/>
+    <contextParameter xmi:id="_iA_KyYGSEfC35YKr3krbSA" comment="" name="metaFileNames" prompt="metaFileNames?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="_THmB0H9TEfCTO_YVdZ_FiA"/>
+    <contextParameter xmi:id="_iA_KyoGSEfC35YKr3krbSA" comment="" name="metaFileTypes" prompt="metaFileTypes?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="_THmB0X9TEfCTO_YVdZ_FiA"/>
+    <contextParameter xmi:id="_iA_Ky4GSEfC35YKr3krbSA" comment="" name="metaFileIds" prompt="metaFileIds?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="_THmB0n9TEfCTO_YVdZ_FiA"/>
+    <contextParameter xmi:id="_iA_KzIGSEfC35YKr3krbSA" comment="" name="sampleId" prompt="sampleId?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_Integer" value="" internalId="_3JLlAH_oEfCf4L0rdgk_Tw"/>
+    <contextParameter xmi:id="_iA_KzYGSEfC35YKr3krbSA" comment="" name="sampleNames" prompt="sampleNames?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="_3JLlAX_oEfCf4L0rdgk_Tw"/>
+    <contextParameter xmi:id="_iA_KzoGSEfC35YKr3krbSA" comment="" name="sampleValues" prompt="sampleValues?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="_3JLlAn_oEfCf4L0rdgk_Tw"/>
+    <contextParameter xmi:id="_iA_Kz4GSEfC35YKr3krbSA" comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
+    <contextParameter xmi:id="_iA_K0IGSEfC35YKr3krbSA" comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="_DlDpoIEXEfCVU5dXin_oQA" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_8BxsIIEbEfCVU5dXin_oQA"/>
+  </context>
+  <parameters xmi:id="_iA_K0YGSEfC35YKr3krbSA">
+    <elementParameter xmi:id="_iA_K0oGSEfC35YKr3krbSA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_iA_K04GSEfC35YKr3krbSA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K1IGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K1YGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K1oGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K14GSEfC35YKr3krbSA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K2IGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K2YGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K2oGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K24GSEfC35YKr3krbSA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K3IGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K3YGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K3oGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K34GSEfC35YKr3krbSA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K4IGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K4YGSEfC35YKr3krbSA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K4oGSEfC35YKr3krbSA" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_K44GSEfC35YKr3krbSA" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_K5IGSEfC35YKr3krbSA" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_iA_K5YGSEfC35YKr3krbSA" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_iA_K5oGSEfC35YKr3krbSA" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_iA_K54GSEfC35YKr3krbSA" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_K6IGSEfC35YKr3krbSA" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_K6YGSEfC35YKr3krbSA" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/WORKSPACES/TEST_KR/in.csv&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K6oGSEfC35YKr3krbSA" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K64GSEfC35YKr3krbSA" field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_K7IGSEfC35YKr3krbSA" field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_iA_K7YGSEfC35YKr3krbSA" field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_iA_K7oGSEfC35YKr3krbSA" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_iA_K74GSEfC35YKr3krbSA" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+    <elementParameter xmi:id="_iA_K8IGSEfC35YKr3krbSA" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K8YGSEfC35YKr3krbSA" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_iA_K8oGSEfC35YKr3krbSA" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K84GSEfC35YKr3krbSA" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K9IGSEfC35YKr3krbSA" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K9YGSEfC35YKr3krbSA" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K9oGSEfC35YKr3krbSA" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K94GSEfC35YKr3krbSA" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K-IGSEfC35YKr3krbSA" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K-YGSEfC35YKr3krbSA" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K-oGSEfC35YKr3krbSA" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:r7Tj0v9uoqif8H1puOXE7YFhVf53Alo1VPmYRcu7" show="false"/>
+    <elementParameter xmi:id="_iA_K-4GSEfC35YKr3krbSA" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K_IGSEfC35YKr3krbSA" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K_YGSEfC35YKr3krbSA" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_K_oGSEfC35YKr3krbSA" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_iA_K_4GSEfC35YKr3krbSA" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_iA_LAIGSEfC35YKr3krbSA" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LAYGSEfC35YKr3krbSA" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LAoGSEfC35YKr3krbSA" field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_iA_LA4GSEfC35YKr3krbSA" field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter xmi:id="_iA_LBIGSEfC35YKr3krbSA" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_iA_LBYGSEfC35YKr3krbSA" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_iA_LBoGSEfC35YKr3krbSA" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_iA_LB4GSEfC35YKr3krbSA" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LCIGSEfC35YKr3krbSA" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LCYGSEfC35YKr3krbSA" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LCoGSEfC35YKr3krbSA" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LC4GSEfC35YKr3krbSA" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LDIGSEfC35YKr3krbSA" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LDYGSEfC35YKr3krbSA" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_iA_LDoGSEfC35YKr3krbSA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_iA_LD4GSEfC35YKr3krbSA" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LEIGSEfC35YKr3krbSA" field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter xmi:id="_iA_LEYGSEfC35YKr3krbSA" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter xmi:id="_iA_LEoGSEfC35YKr3krbSA" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LE4GSEfC35YKr3krbSA" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_iA_LFIGSEfC35YKr3krbSA" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LFYGSEfC35YKr3krbSA" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LFoGSEfC35YKr3krbSA" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LF4GSEfC35YKr3krbSA" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LGIGSEfC35YKr3krbSA" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LGYGSEfC35YKr3krbSA" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LGoGSEfC35YKr3krbSA" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LG4GSEfC35YKr3krbSA" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LHIGSEfC35YKr3krbSA" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LHYGSEfC35YKr3krbSA" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:t4HHBS4V+K6lOcd2Jfn8U8IhcFJlCESE6yEJ3FVx" show="false"/>
+    <elementParameter xmi:id="_iA_LHoGSEfC35YKr3krbSA" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LH4GSEfC35YKr3krbSA" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LIIGSEfC35YKr3krbSA" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LIYGSEfC35YKr3krbSA" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iA_LIoGSEfC35YKr3krbSA" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_iA_LI4GSEfC35YKr3krbSA" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_iA_LJIGSEfC35YKr3krbSA" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_iA_LJYGSEfC35YKr3krbSA" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LJoGSEfC35YKr3krbSA" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LJ4GSEfC35YKr3krbSA" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LKIGSEfC35YKr3krbSA" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LKYGSEfC35YKr3krbSA" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LKoGSEfC35YKr3krbSA" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LK4GSEfC35YKr3krbSA" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LLIGSEfC35YKr3krbSA" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_iA_LLYGSEfC35YKr3krbSA" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LLoGSEfC35YKr3krbSA" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_iA_LL4GSEfC35YKr3krbSA" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+</testcontainer:TestContainer>
