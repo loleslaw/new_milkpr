@@ -960,7 +960,7 @@
       <column comment="" key="false" length="-1" name="sample_param_data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="samples">
         <mapperTableEntries name="id" expression="row6.next_id " type="id_Integer"/>
@@ -1100,18 +1100,18 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zNQ2EH5IEfCTg-HTYLHZeQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="context.connection_LabDb_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.connection_LabDb_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.connection_LabDb_Database"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_LabDb_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_LabDb_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_LabDb_Database" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_LabDb_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.connection_LabDb_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Zy3Ag1N6ETAfKLatwFdz+de7B4MySAX1OVuVSdzBF3MSGfz8lSs8xj8y5K0Gj+3SJp/egW8eTcz71ZeTmg=="/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_LabDb_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_LabDb_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Zy3Ag1N6ETAfKLatwFdz+de7B4MySAX1OVuVSdzBF3MSGfz8lSs8xj8y5K0Gj+3SJp/egW8eTcz71ZeTmg==" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;samples&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1120,18 +1120,18 @@
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
     <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_LabDb_AdditionalParams"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_LabDb_AdditionalParams" show="false"/>
     <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -1610,7 +1610,7 @@
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="LABEL" value="ids map"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_5">
@@ -1655,7 +1655,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="1520">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_3" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
@@ -1850,7 +1850,7 @@
       <column comment="" key="false" length="-1" name="paramId_1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="paramValue" expression="utl.mapValue(row24.name, context.dataHeaders,((String)globalMap.get(&quot;copyOfdataRow.data&quot;)) ) " type="id_String"/>
         <mapperTableEntries name="paramId" expression="utl.mapValue(row24.name, context.metaFileNames , context.metaFileIds,&quot;;&quot;) " type="id_String"/>
@@ -2208,7 +2208,7 @@
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dataRow">
         <mapperTableEntries name="labSampleId" expression="row16.newSampleId " type="id_Integer" nullable="true"/>
@@ -2434,7 +2434,7 @@
       <column comment="" key="false" length="-1" name="paramId_1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="paramValue" expression="utl.mapValue(row18.name, context.dataHeaders,(String)globalMap.get(&quot;dataRow.data&quot;) ) " type="id_String"/>
         <mapperTableEntries name="paramId" expression="utl.mapValue(row18.name, context.metaFileNames , context.metaFileIds,&quot;;&quot;) " type="id_String"/>
@@ -3001,8 +3001,10 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="sample data load"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
