@@ -11,9 +11,9 @@
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_1WgHgH8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WgHgX8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:hheVhD6AYYaVcoIl6LepVNoYD9U569to5tx5MJ36bsHz8e40" internalId="_1WgHgn8ZEfCisq_Xwl1E0g"/>
-    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_1WgHg38ZEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.157" internalId="_1WgHg38ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="0" internalId="_1WgHhH8ZEfCisq_Xwl1E0g"/>
-    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_1WgHhX8ZEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5431" internalId="_1WgHhX8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WgHhn8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_ZTONgH8aEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_ZTONgX8aEfCisq_Xwl1E0g"/>
@@ -138,8 +138,6 @@
     <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogCatcher_1">
       <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
@@ -169,8 +167,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="job_logs" name="log_out">
       <column comment="" key="false" length="22" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -347,7 +343,6 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="job_logs" name="tDBOutput_1">
       <column comment="" key="false" length="22" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -430,8 +425,6 @@
   </node>
   <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tStatCatcher_1">
       <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
@@ -463,8 +456,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="job_stats" name="stat_out">
       <column comment="" key="false" length="22" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -661,7 +652,6 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="job_stats" name="tDBOutput_2">
       <column comment="" key="false" length="22" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -756,8 +746,6 @@
   </node>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="120">
@@ -782,7 +770,6 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_LabDb_AdditionalParams"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="LAB_db"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="120">
@@ -807,7 +794,6 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_MilkProfilerDb_AdditionalParams"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="mleczarnia_0_db"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="120">
@@ -815,8 +801,6 @@
     <elementParameter field="TEXT" name="MESSAGE" value="jobName"/>
     <elementParameter field="TEXT" name="CODE" value="0"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="1"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
@@ -826,8 +810,6 @@
     <elementParameter field="TEXT" name="CODE" value="100"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
@@ -837,23 +819,17 @@
     <elementParameter field="TEXT" name="CODE" value="101"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_2"/>
   </node>
   <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="2640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="2560">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="2640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.print(&quot;\n\nTO KONIEC&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
@@ -902,7 +878,6 @@
       <elementValue elementRef="TRIM" value="false" id="11"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="TESTS DATA"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tDBInput_1">
       <column comment="" key="false" length="1" name="test_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
@@ -926,18 +901,20 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="idMap">
       <column comment="" key="false" length="1" name="milkProfilerSampleId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="sampleParams">
-      <column comment="" key="false" length="-1" name="labId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="tests" name="test_data">
+      <column comment="" defaultValue="nextval('lab.tests_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="10" name="type_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -965,10 +942,12 @@
         <mapperTableEntries name="newSampleId" expression="row6.next_id " type="id_Integer" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="sampleParams">
-        <mapperTableEntries name="labId" expression="row6.next_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labSampleId" expression="row27.newSampleId " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labTestId" expression="row6.next_id " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="data" expression="row3.test_id + &quot; - &quot; + row27.newSampleId  + &quot; - &quot; + row3.sample_id  + &quot; - &quot; + row3.param_data.toString() " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="test_data">
+        <mapperTableEntries name="id" expression="row6.next_id " type="id_Integer"/>
         <mapperTableEntries name="type_id" expression="context.testTemplateId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="tmp_sample_id" expression="row27.newSampleId " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="supplier_id" expression="row27.suplier_id " type="id_Integer" nullable="true"/>
@@ -1029,7 +1008,6 @@
       <elementValue elementRef="TRIM" value="false" id="1"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="TESTS seq"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="samples" name="tDBInput_2">
       <column comment="" key="false" length="-1" name="next_id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -1046,10 +1024,10 @@
     <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="SAMPLE_PARAMS"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_1">
-      <column comment="" key="false" length="-1" name="labId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1064,7 +1042,6 @@
     <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="IDs MAP"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_3">
       <column comment="" key="false" length="1" name="milkProfilerSampleId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1084,8 +1061,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="test_dataw_1" name="test_dataw_1">
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -1108,6 +1083,9 @@
       </column>
     </metadata>
     <metadata connector="FLOW" label="tests" name="tests_out">
+      <column comment="" defaultValue="nextval('lab.tests_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1139,6 +1117,7 @@
         <mapperTableEntries name="result_ready" expression="" type="id_Boolean" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="tests_out">
+        <mapperTableEntries name="id" expression="test_data.id " type="id_Integer"/>
         <mapperTableEntries name="template_id" expression="test_data.type_id " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="sample_id" expression="test_data.tmp_sample_id " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="supplier_id" expression="test_data.supplier_id " type="id_Integer" nullable="true"/>
@@ -1147,6 +1126,7 @@
         <mapperTableEntries name="result_ready" expression="test_data.result_ready " type="id_Boolean" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="test_data" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id" type="id_Integer"/>
         <mapperTableEntries name="type_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="tmp_sample_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="supplier_id" type="id_Integer" nullable="true"/>
@@ -1162,8 +1142,6 @@
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_4"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_1">
       <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -1185,18 +1163,20 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="labId" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="labSampleId" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="data" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="labTestId" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="LABEL" value="sample params"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_7">
-      <column comment="" key="false" length="-1" name="labId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1205,7 +1185,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zNQ2EH5IEfCTg-HTYLHZeQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
     <elementParameter field="TEXT" name="HOST" value="context.connection_LabDb_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.connection_LabDb_Port"/>
@@ -1228,53 +1208,60 @@
     <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
     <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_LabDb_AdditionalParams"/>
-    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="1"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="template_id" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id" id="0"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
       <elementValue elementRef="UPDATABLE" value="true" id="3"/>
       <elementValue elementRef="INSERTABLE" value="true" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sample_id" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="template_id" id="5"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
       <elementValue elementRef="UPDATABLE" value="true" id="8"/>
       <elementValue elementRef="INSERTABLE" value="true" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_id" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sample_id" id="10"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
       <elementValue elementRef="UPDATABLE" value="true" id="13"/>
       <elementValue elementRef="INSERTABLE" value="true" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="description" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_id" id="15"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
       <elementValue elementRef="UPDATABLE" value="true" id="18"/>
       <elementValue elementRef="INSERTABLE" value="true" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="performed_at" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description" id="20"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
       <elementValue elementRef="UPDATABLE" value="true" id="23"/>
       <elementValue elementRef="INSERTABLE" value="true" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="result_ready" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="performed_at" id="25"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
       <elementValue elementRef="UPDATABLE" value="true" id="28"/>
       <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="result_ready" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tests" name="tDBOutput_3">
+      <column comment="" defaultValue="nextval('lab.tests_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1295,6 +1282,9 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="tests" name="REJECT">
+      <column comment="" defaultValue="nextval('lab.tests_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1331,25 +1321,29 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="template_id" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sample_id" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="template_id" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_id" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sample_id" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="description" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_id" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="performed_at" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="result_ready" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="performed_at" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="result_ready" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="LABEL" value="test data"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="test_dataw_1" name="tLogRow_3">
+    <metadata connector="FLOW" label="tests" name="tLogRow_3">
+      <column comment="" defaultValue="nextval('lab.tests_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1370,12 +1364,10 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tPostgresqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="2600">
+  <node componentName="tPostgresqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="2640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
@@ -1434,7 +1426,6 @@
       <elementValue elementRef="TRIM" value="false" id="19"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="laboratory_template_parameters" name="tDBInput_3">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -1480,8 +1471,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="laboratory_template_parameters" name="tFilterRow_11">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -1592,7 +1581,6 @@
     <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="TEMPLATE"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="laboratory_template_parameters" name="tHashOutput_2">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -1629,8 +1617,6 @@
   </node>
   <node componentName="tFilterColumns" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterColumns_1" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFilterColumns_1">
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
@@ -1653,8 +1639,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
     <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tConvertType_2">
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
@@ -1696,8 +1680,6 @@
     </elementParameter>
     <elementParameter field="LABEL" name="NOTE" value=""/>
     <elementParameter field="CHECK" name="NULL_AS_EMPTY" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDenormalize_1">
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
@@ -1715,17 +1697,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.metaFileNames = input_row.name;&#xD;&#xA;context.metaFileTypes = input_row.value_type;&#xD;&#xA;context.metaFileIds = input_row.id;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;utl.xprint(&quot;metaFileNames - &quot;, context.metaFileNames);&#xD;&#xA;utl.xprint(&quot;metaFileTypes - &quot;, context.metaFileTypes);&#xD;&#xA;utl.xprint(&quot;metaFileIds - &quot;, context.metaFileIds);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import routines.utl;"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1920">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.dataHeaders = &quot;old_image_id~new_image_id~x1~x2~y1~y2~approx_diameter~area~circularity~circularity_crofton~convex_area~diff_convex~diff_convex_ratio~eccentricity&quot;;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//gr.image_id as mp_image_id,x1,x2,y1,y2,approx_diameter,area,circularity,circularity_crofton,convex_area,diff_convex,diff_convex_ratio,eccentricity&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;context.dataHeaders = &quot;mp_analysis_id~old_image_id~x1~x2~y1~y2~approx_diameter~area~circularity~circularity_crofton~convex_area~diff_convex~diff_convex_ratio~eccentricity&quot;;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="DATA HEADER"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
@@ -1748,7 +1727,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#xD;&#xA;image_id as old_image_id,&#xD;&#xA;ai.sample_id ,&#xD;&#xA;x1,x2,y1,y2,approx_diameter,area,circularity,circularity_crofton,convex_area,diff_convex,diff_convex_ratio,eccentricity&#xD;&#xA;from \&quot;0\&quot;.globule_result gr &#xD;&#xA;join (select sd.sample_id, cast(sd.value_text as Int) as old_sample_id from lab.sample_data sd where sd.parameter_id = 13) ai &#xD;&#xA;on ai.old_sample_id = gr.image_id &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;select &#xD;&#xA;ai.sample_id as lab_test_id,&#xD;&#xA;ai.sample_data_id,&#xD;&#xA;gr.analysis_id  as mp_analysis_id, gr.image_id as mp_image_id,x1,x2,y1,y2,approx_diameter,area,circularity,circularity_crofton,convex_area,diff_convex,diff_convex_ratio,eccentricity&#xD;&#xA;&#xD;&#xA;from \&quot;0\&quot;.globule_result gr &#xD;&#xA;join (select sd.id as sample_data_id, sd.sample_id, cast(sd.value_text as Int) as old_sample_id from lab.sample_data sd where sd.parameter_id = 13) ai &#xD;&#xA;on ai.old_sample_id = gr.image_id&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1760,33 +1739,31 @@
     <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="old_imageId" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="labTestid" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sample_id" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sampleDataId" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="data" id="4"/>
       <elementValue elementRef="TRIM" value="false" id="5"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_image" name="tDBInput_4">
-      <column comment="" key="false" length="-1" name="old_imageId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sample_id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestid" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sampleDataId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Dynamic" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="2280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.old_imageId = input_row.old_imageId;&#xD;&#xA;output_row.sample_id = input_row.sample_id;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;String txt = ((input_row.data).toString()).replaceAll(&quot; - &quot;, &quot;~&quot;);&#xD;&#xA;output_row.data = txt;&#xD;&#xA;utl.xprint(&quot;DATA &quot;, txt);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.labTestid = input_row.labTestid;&#xD;&#xA;output_row.sampleDataId = input_row.sampleDataId;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;String txt = ((input_row.data).toString()).replaceAll(&quot; - &quot;, &quot;~&quot;);&#xD;&#xA;output_row.data = txt;&#xD;&#xA;utl.xprint(&quot;DATA &quot;, txt);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import routines.utl;"/>
     <elementParameter field="TEXT" name="LABEL" value="clear Data"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_image" name="tJavaRow_3">
-      <column comment="" key="false" length="-1" name="old_imageId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sample_id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestid" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sampleDataId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="2280">
@@ -1802,41 +1779,42 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="dataRow">
-      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sample_id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sampleDataId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dataRow">
-        <mapperTableEntries name="labSampleId" expression="row16.newSampleId " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="sample_id" expression="row15.sample_id " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="data" expression="row15.old_imageId  +&quot;~&quot;+  row15.data " type="id_String" nullable="true"/>
+        <mapperTableEntries name="labTestId" expression="row20.labTestId " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sampleDataId" expression="row15.sampleDataId " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="data" expression=" row15.data " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="old_imageId" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="sample_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labTestid" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sampleDataId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="data" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row16" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="milkProfilerSampleId" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="newSampleId" expression="row15.sample_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="newSampleId" expression="row15.labTestid " type="id_Integer" nullable="true" operator="="/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="labSampleId" expression="row15.labTestid " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="labTestId" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="data" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="2120">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="2120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_3">
       <column comment="" key="false" length="1" name="milkProfilerSampleId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1847,8 +1825,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
@@ -1859,7 +1835,6 @@
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="template"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_4">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -1905,8 +1880,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFilterRow_30">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -2019,10 +1992,9 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="dataRow1">
+      <column comment="" key="false" length="-1" name="lab_test_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -2044,7 +2016,8 @@
         <mapperTableEntries name="paramId" expression="utl.mapValue(row18.name, context.metaFileNames , context.metaFileIds,&quot;;&quot;) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="dataRow1">
-        <mapperTableEntries name="sampleId" expression="((Integer)globalMap.get(&quot;dataRow.sample_id&quot;))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="lab_test_id" expression="((Integer)globalMap.get(&quot;dataRow.labTestId&quot;))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sampleId" expression="((Integer)globalMap.get(&quot;dataRow.sampleDataId&quot;))" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="name" expression="row18.name  " type="id_String"/>
         <mapperTableEntries name="data_type" expression="row18.value_type " type="id_String"/>
         <mapperTableEntries name="required" expression="row18.required " type="id_Boolean" nullable="true"/>
@@ -2080,27 +2053,28 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="sampleId" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lab_test_id" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sampleId" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="data_type" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="required" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_type" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramValue" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="required" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramId" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramValue" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramId_1" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramId" id="12"/>
       <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramId_1" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="lab_test_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -2129,32 +2103,7 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="sample_data" name="data">
-      <column comment="" key="false" length="10" name="sample_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="parameter_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="value_text" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="value_boolean" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="value_numeric" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="value_category" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="29" name="value_datetime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
     <metadata connector="FLOW" label="test_data" name="td_out">
       <column comment="" key="false" length="10" name="test_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -2182,21 +2131,12 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="data" expressionFilter="dataRow1.paramId > 0" activateExpressionFilter="true">
-        <mapperTableEntries name="sample_id" expression="" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="parameter_id" expression="" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="value_text" expression="row19.paramValue " type="id_String" nullable="true"/>
-        <mapperTableEntries name="value_boolean" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="value_numeric" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="value_category" type="id_String" nullable="true"/>
-        <mapperTableEntries name="value_datetime" type="id_Date" nullable="true"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="td_out">
-        <mapperTableEntries name="test_id" expression="row19.sampleId " type="id_Integer" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="td_out" expressionFilter="row19.paramId >0" activateExpressionFilter="true">
+        <mapperTableEntries name="test_id" expression="row19.lab_test_id " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="parameter_id" expression="row19.paramId " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="sample_data_id" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sample_data_id" expression="row19.sampleId " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="value_text" expression="row19.paramValue " type="id_String" nullable="true"/>
         <mapperTableEntries name="value_boolean" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="value_numeric" type="id_BigDecimal" nullable="true"/>
@@ -2204,6 +2144,7 @@
         <mapperTableEntries name="value_datetime" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row19" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="lab_test_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="sampleId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="name" type="id_String"/>
         <mapperTableEntries name="data_type" type="id_String"/>
@@ -2216,15 +2157,6 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="2280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_5" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zNQ2EH5IEfCTg-HTYLHZeQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2305,7 +2237,6 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="test_data" name="tDBOutput_5">
       <column comment="" key="false" length="10" name="test_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -2362,12 +2293,25 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="2120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_5" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="sample_params"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_5">
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//row3.test_id  row27.newSampleId   row3.sample_id  started&#x9;finished&#x9;pixel_size&#x9;status&#x9;rar_id&#x9;value&#x9;api_version&#x9;inference_pipeline_version&#x9;json_value&#xD;&#xA;// started;finished;pixel_size;status;rar_id;value;api_version;inference_pipeline_version;json_value&#xD;&#xA;context.dataHeaders = &quot;old_test_id~new_sample_id~old_sample_id~started~finished~pixel_size~status~rar_id~value~api_version~inference_pipeline_version~json_value&quot;;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="DATA HEADER"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
@@ -2410,7 +2354,6 @@
       <elementValue elementRef="TRIM" value="false" id="5"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_parameters" name="tDBInput_5">
       <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -2429,7 +2372,6 @@
     <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="SamplesIdMap"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_parameters" name="tHashOutput_4">
       <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -2460,8 +2402,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_parameters" name="tLogRow_6">
       <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -2469,47 +2409,33 @@
       <column comment="" key="false" length="-1" name="suplier_id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1800">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="sample_params"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_2">
-      <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="1800">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.sampleId = input_row.sampleId;&#xD;&#xA;output_row.data = input_row.data;&#xD;&#xA;&#xD;&#xA;String txt = ((input_row.data).toString()).replaceAll(&quot; - &quot;, &quot;~&quot;);&#xD;&#xA;output_row.data = txt;&#xD;&#xA;utl.xprint(&quot;DATA &quot;, txt);&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.labSampleId = input_row.labSampleId;&#xD;&#xA;output_row.labTestId = input_row.labTestId;&#xD;&#xA;output_row.data = input_row.data;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;String txt = ((input_row.data).toString()).replaceAll(&quot; - &quot;, &quot;~&quot;);&#xD;&#xA;output_row.data = txt;&#xD;&#xA;utl.xprint(&quot;DATA &quot;, txt);&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import routines.utl;"/>
     <elementParameter field="TEXT" name="LABEL" value="clear Data"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
-      <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="1640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_5" show="false"/>
-    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
-    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tHashInput_5">
-      <column comment="" key="false" length="1" name="milkProfilerSampleId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="newSampleId" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="1800">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -2522,47 +2448,41 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfdataRow">
       <column comment="" key="false" length="-1" name="labSampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="labTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfdataRow">
-        <mapperTableEntries name="labSampleId" expression="row20.newSampleId " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labSampleId" expression="row11.labSampleId " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labTestId" expression="row11.labTestId " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="data" expression=" row11.data " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="sampleId" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labSampleId" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="labTestId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="data" type="id_String" nullable="true"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="milkProfilerSampleId" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="newSampleId" expression="row11.sampleId " type="id_Integer" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="1800">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_2"/>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1800">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_6" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/WORKSPACES/TEST_KR/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="template"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_6">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -2597,7 +2517,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="1800">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_36" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
     <elementParameter field="TABLE" name="CONDITIONS">
@@ -2609,7 +2529,6 @@
     <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="META"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFilterRow_36">
       <column comment="" defaultValue="nextval('lab.laboratory_template_parameters_id_seq'::regclass)" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
@@ -2709,7 +2628,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="1800">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -2722,11 +2641,10 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfdataRow1">
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LabTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2748,6 +2666,7 @@
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="copyOfdataRow1">
         <mapperTableEntries name="sampleId" expression="((Integer)globalMap.get(&quot;copyOfdataRow.labSampleId&quot;))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LabTestId" expression="((Integer)globalMap.get(&quot;copyOfdataRow.labTestId&quot;))" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="name" expression="row24.name  " type="id_String"/>
         <mapperTableEntries name="data_type" expression="row24.value_type " type="id_String"/>
         <mapperTableEntries name="required" expression="row24.required " type="id_Boolean" nullable="true"/>
@@ -2769,7 +2688,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1800" posY="1800">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1800" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2785,26 +2704,28 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="sampleId" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LabTestId" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="data_type" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="required" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_type" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramValue" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="required" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramId" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramValue" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paramId_1" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramId" id="12"/>
       <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paramId_1" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="LABEL" value="meta params"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_4">
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LabTestId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="name" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2819,7 +2740,7 @@
       <column comment="" key="false" length="-1" name="paramId_1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1800">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -2832,8 +2753,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_parameters" name="param_out">
       <column comment="" key="false" length="10" name="sample_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -2882,7 +2801,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="param_out">
         <mapperTableEntries name="sample_id" expression="" type="id_Integer" nullable="true"/>
@@ -2904,6 +2823,7 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row26" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="sampleId" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LabTestId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="name" type="id_String"/>
         <mapperTableEntries name="data_type" type="id_String"/>
         <mapperTableEntries name="required" type="id_Boolean" nullable="true"/>
@@ -2913,17 +2833,8 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2120" posY="1800">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2120" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zNQ2EH5IEfCTg-HTYLHZeQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2999,7 +2910,6 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="test_parameters" name="tDBOutput_4">
       <column comment="" key="false" length="10" name="sample_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -3114,14 +3024,22 @@
       <elementValue elementRef="TRACE_COLUMN" value="LabTestId" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="labId" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN" value="labSampleId" id="3"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="labTestId" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="sampleParams" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="test_data" lineStyle="0" metaname="test_data" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_4" target="tMap_10">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="test_data" show="false"/>
   </connection>
@@ -3134,6 +3052,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="tests_out" lineStyle="0" metaname="tests_out" offsetLabelX="0" offsetLabelY="0" source="tMap_10" target="tDBOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tests_out" show="false"/>
   </connection>
@@ -3207,9 +3130,12 @@
   </connection>
   <connection connectorName="FLOW" label="dataRow" lineStyle="0" metaname="dataRow" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tFlowToIterate_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="sample_id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN" value="sampleDataId" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="labTestId" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="dataRow" show="false"/>
@@ -3232,6 +3158,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="dataRow1" lineStyle="0" metaname="dataRow1" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="lab_test_id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="dataRow1" show="false"/>
   </connection>
@@ -3242,6 +3173,10 @@
   <connection connectorName="FLOW" label="td_out" lineStyle="0" metaname="td_out" offsetLabelX="0" offsetLabelY="0" source="tMap_9" target="tDBOutput_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="td_out" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row20" lineStyle="8" metaname="tHashInput_5" offsetLabelX="0" offsetLabelY="0" source="tHashInput_5" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tHashInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
@@ -3263,6 +3198,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="labTestId" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="labSampleId" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
@@ -3273,11 +3216,12 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row20" lineStyle="8" metaname="tHashInput_5" offsetLabelX="0" offsetLabelY="0" source="tHashInput_5" target="tMap_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="copyOfdataRow" lineStyle="0" metaname="copyOfdataRow" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFlowToIterate_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="labTestId" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfdataRow" show="false"/>
   </connection>
@@ -3295,6 +3239,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfdataRow1" lineStyle="0" metaname="copyOfdataRow1" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tLogRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LabTestId" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfdataRow1" show="false"/>
   </connection>
@@ -3317,7 +3266,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -3348,7 +3297,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
