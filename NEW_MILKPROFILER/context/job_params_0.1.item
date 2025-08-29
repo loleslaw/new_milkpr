@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_fFiPgII9EfCMPdM-WdS-sg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_fGtUMII9EfCMPdM-WdS-sg" comment="Samples MFA" name="param_templateID" prompt="param_templateID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+  <contextParameter xmi:id="_jZILoII9EfCMPdM-WdS-sg" comment="" name="param_metaSQL" prompt="param_metaSQL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_uYUdEII9EfCMPdM-WdS-sg" comment="" name="param_metaSampleHeaders" prompt="param_metaSampleHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_3f2EoIJxEfCMPdM-WdS-sg" comment="" name="param_metaParamHeaders" prompt="param_metaParamHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_uxI9MIJzEfCMPdM-WdS-sg" comment="" name="param_metaDataHeaders" prompt="param_metaDataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_XwSbQIJ0EfCMPdM-WdS-sg" comment="" name="param_metaDataSQL" prompt="param_metaDataSQL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

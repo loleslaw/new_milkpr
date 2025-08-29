@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_1WfgcH8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1WfgcX8ZEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_1Wfgcn8ZEfCisq_Xwl1E0g"/>
@@ -31,6 +31,38 @@
     <contextParameter comment="" name="sampleValues" prompt="sampleValues?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAn_oEfCf4L0rdgk_Tw"/>
     <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_mzFg0IEbEfCVU5dXin_oQA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="MQA_2">
+    <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_-kEy0IJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy0YJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_-kEy0oJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_-kEy04JlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_-kEy1IJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy1YJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:Yk+NpMemPJ2oAG5734g2VePk0q7MlbDUmQZ74tByoBPxDc8+" internalId="_-kEy1oJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy14JlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_-kEy2IJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Schema" prompt="connection_TalendDB_Schema?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="talend_jobs" internalId="_-kEy2YJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Port" prompt="connection_TalendDB_Port?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_-kEy2oJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_-kEy24JlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:8ChQTGutH2sJSY71oDQBZZupr3R0/OjnZymmGcA4TPN7+a76" internalId="_-kEy3IJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_TalendDB_Database" prompt="connection_TalendDB_Database?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy3YJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="Samples MFA" name="templateId" prompt="templateId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_1xqmcH9OEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileNames" prompt="metaFileNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0H9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileTypes" prompt="metaFileTypes?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0X9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileIds" prompt="metaFileIds?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0n9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="sampleId" prompt="sampleId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" internalId="_3JLlAH_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleNames" prompt="sampleNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAX_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleValues" prompt="sampleValues?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAn_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_mzFg0IEbEfCVU5dXin_oQA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="0" internalId="_-kEy3oJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy34JlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5431" internalId="_-kEy4IJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_-kEy4YJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:Fwkjg142Kugq7s49BVG98bdo4Yl2NpSG3RChK1/dr4zB7eT2" internalId="_-kEy4oJlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.157" internalId="_-kEy44JlEfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_-kEy5IJlEfCMPdM-WdS-sg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -875,7 +907,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value=" &quot;select &#xD;&#xA;ms.id,&#xD;&#xA;  ms.name, &#xD;&#xA;  ms.notes,&#xD;&#xA;  ms.created, &#xD;&#xA; mscc.supplier_id,&#xD;&#xA;  ms.milk_sample_frozen, &#xD;&#xA;  ms.sampled, &#xD;&#xA;  ms.source_id, &#xD;&#xA;msc.milk_sample_count , msc.newest_analysis_time , msc.oldest_analysis_time ,msc.id &#xD;&#xA;&#xD;&#xA;from \&quot;0\&quot;.milk_sample ms&#xD;&#xA;join \&quot;0\&quot;.milk_source_composite msc&#xD;&#xA;on ms.source_id = msc.id&#xD;&#xA;join \&quot;0\&quot;. milk_source_composite_components mscc&#xD;&#xA;on mscc.milk_source_composite_id = msc.id&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value=" &quot;select &#xD;&#xA;ms.id,&#xD;&#xA;  ms.name, &#xD;&#xA;  ms.notes,&#xD;&#xA;  ms.created, &#xD;&#xA; mscc.supplier_id,&#xD;&#xA;  ms.milk_sample_frozen, &#xD;&#xA;  ms.sampled, &#xD;&#xA;  ms.source_id, &#xD;&#xA;msc.milk_sample_count , msc.newest_analysis_time , msc.oldest_analysis_time ,msc.id &#xD;&#xA;&#xD;&#xA;from \&quot;0\&quot;.milk_sample ms&#xD;&#xA;join \&quot;0\&quot;.milk_source_composite msc&#xD;&#xA;on ms.source_id = msc.id&#xD;&#xA;join \&quot;0\&quot;. milk_source_composite_components mscc&#xD;&#xA;on mscc.milk_source_composite_id = msc.id&#xD;&#xA;join \&quot;0\&quot;.analysis a &#xD;&#xA;on ms.source_id = a.source_id &#xD;&#xA;where a.analysis_type =0&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2146,7 +2178,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ai.analysis_id , si.* from \&quot;0\&quot;.sample_image si &#xD;&#xA;join \&quot;0\&quot;.analysis_images ai &#xD;&#xA;on si.id = ai.images_id&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ai.analysis_id , si.* from \&quot;0\&quot;.sample_image si &#xD;&#xA;join \&quot;0\&quot;.analysis_images ai &#xD;&#xA;on si.id = ai.images_id&#xD;&#xA;join \&quot;0\&quot;.analysis a &#xD;&#xA;on ai.analysis_id  = a.id &#xD;&#xA;where a.analysis_type =0&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
