@@ -451,6 +451,10 @@
     "id" : "_mnYSkH8XEfCisq_Xwl1E0g - job_stats",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_zNQ2EH5IEfCTg-HTYLHZeQ - tests",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
