@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="AWS1" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="AWS1">
+    <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_xbIMIIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMIYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_xbIMIocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMI4cyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:6cagJekDiaHoxBBgcuDVEwB/EGXrqcMpsa9w4KvbA0re+FPJ" internalId="_xbIMJIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_xbIMJYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_xbIMJocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_xbIMJ4cyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMKIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:GZgtC2nOQVls08MfuRkURXrgXepJookNLekNBRtbIIhgj710" internalId="_xbIzMIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_xbIzMYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="0" internalId="_xbIzMocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_xbIzM4cyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIzNIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIzNYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_xbIzNocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Schema" prompt="connection_TalendDB_Schema?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="talend_jobs" internalId="_xbIzN4cyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Port" prompt="connection_TalendDB_Port?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_xbIzOIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_xbIzOYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:84aOSeMmuUPm6Y87atjE28HloD8eKH6ko9qyNqGigIUNLWC7" internalId="_xbIzOocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_TalendDB_Database" prompt="connection_TalendDB_Database?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIzO4cyEfCA3ZaCiMXc9g"/>
+  </context>
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_xbIMIIcyEfCA3ZaCiMXc9g"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMIYcyEfCA3ZaCiMXc9g"/>
@@ -1006,7 +1029,7 @@
       <column comment="" key="false" length="-1" name="data" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="sample_data_id" expression="row9.sample_data_id" type="id_Integer" nullable="true"/>
@@ -1117,7 +1140,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="paramValue" expression="utl.mapValue(row10.paramName,&quot;freezing~centrifuging~rec_uht~rec_cream~rec_butter~rec_cheese~rec_powder~rec_yoghurt&quot;,((String)globalMap.get(&quot;out3.data&quot;))) " type="id_String"/>
       </varTables>

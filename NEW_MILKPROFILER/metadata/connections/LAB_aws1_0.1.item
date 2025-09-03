@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_T0etsIiuEfC1wuoIx9IbYA" name="LAB_aws1" id="_-MRPIIitEfC1wuoIx9IbYA" label="LAB_aws1" dataPackage="_T8bIwIiuEfC1wuoIx9IbYA" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://aws-1-eu-north-1.pooler.supabase.com:6543/postgres?" dbVersionString="V9_X" Port="6543" Username="postgres.nilxiiadhcppyeuhthkv" Password="enc:system.encryption.key.v1:UwX21x8qbAWyA4ZfvUApXaiGiGdgF5B6+/1GNMVrJHwp8hJ2/cajDV/o0sWx" ServerName="aws-1-eu-north-1.pooler.supabase.com" DatasourceName="" FileFieldName="" SID="postgres" SqlSynthax="SQL 92" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="lab" supportNLS="false">
+    <taggedValue xmi:id="_T0etsYiuEfC1wuoIx9IbYA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_T00E4IiuEfC1wuoIx9IbYA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_T00E4YiuEfC1wuoIx9IbYA" tag="Status" value=""/>
+    <taggedValue xmi:id="_T00E4oiuEfC1wuoIx9IbYA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_T00E44iuEfC1wuoIx9IbYA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_T00E5IiuEfC1wuoIx9IbYA" tag="Description" value=""/>
+    <taggedValue xmi:id="_T00E5YiuEfC1wuoIx9IbYA" tag="Author" value=""/>
+    <taggedValue xmi:id="_T00E5oiuEfC1wuoIx9IbYA" tag="otherParameter"/>
+    <taggedValue xmi:id="_T4nm0IiuEfC1wuoIx9IbYA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_T4nm0YiuEfC1wuoIx9IbYA" tag="DB ProductVersion" value="17.4"/>
+    <taggedValue xmi:id="_T4nm0oiuEfC1wuoIx9IbYA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_T0etsoiuEfC1wuoIx9IbYA" key="CONN_PARA_KEY_USERNAME" value="postgres.nilxiiadhcppyeuhthkv"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_T8bIwIiuEfC1wuoIx9IbYA" name="postgres" dataManager="_T0etsIiuEfC1wuoIx9IbYA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_T8bIwYiuEfC1wuoIx9IbYA" name="lab"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
