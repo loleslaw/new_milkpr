@@ -11,7 +11,7 @@
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_1aGw838gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1aGw9H8gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_1aGw9X8gEfCisq_Xwl1E0g"/>
-    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_1aGw9n8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_1aGw9n8gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_1aGw938gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_1aGw-H8gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:emWXaIE3QzZeaIZCVCaW12GKVkeWsAQ3Ru5uzCgk0cZh75Cu" internalId="_1aGw-X8gEfCisq_Xwl1E0g"/>
@@ -203,7 +203,6 @@
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
     <elementParameter field="TEXT" name="INFLATION_RATIO" value="" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="ingest_data"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -243,8 +242,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="laboratory_test_template_parameters" name="out1">
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -380,7 +377,6 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="laboratory_test_template_parameters" name="tDBOutput_1">
       <column comment="" key="false" length="10" name="template_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">

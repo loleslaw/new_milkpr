@@ -75,5 +75,80 @@
       "id" : "_IIe_1H8aEfCisq_Xwl1E0g",
       "name" : "connection_TalendDB_Database"
     } ]
+  }, {
+    "contextName" : "MQA",
+    "repoId" : "_84crcH8YEfCisq_Xwl1E0g",
+    "parameterList" : [ {
+      "id" : "_WPCu0YiyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Schema"
+    }, {
+      "id" : "_WPCu0oiyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Login"
+    }, {
+      "id" : "_WPCu04iyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Port"
+    }, {
+      "id" : "_WPCu14iyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_AdditionalParams"
+    }, {
+      "id" : "_WPCu1oiyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Server"
+    }, {
+      "id" : "_WPCu1IiyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Database"
+    }, {
+      "id" : "_WPCu1YiyEfC1wuoIx9IbYA",
+      "name" : "connection_LabDb_Password"
+    } ]
+  }, {
+    "contextName" : "MQA",
+    "repoId" : "_niXpQH8ZEfCisq_Xwl1E0g",
+    "parameterList" : [ {
+      "id" : "_niuOl38ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_AdditionalParams"
+    }, {
+      "id" : "_niuOlH8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Database"
+    }, {
+      "id" : "_niuOlX8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Password"
+    }, {
+      "id" : "_niuOln8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Server"
+    }, {
+      "id" : "_niuOkX8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Schema"
+    }, {
+      "id" : "_niuOk38ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Port"
+    }, {
+      "id" : "_niuOkn8ZEfCisq_Xwl1E0g",
+      "name" : "connection_MilkProfilerDb_Login"
+    } ]
+  }, {
+    "contextName" : "MQA",
+    "repoId" : "_IH0RcH8aEfCisq_Xwl1E0g",
+    "parameterList" : [ {
+      "id" : "_IIe_0X8aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Schema"
+    }, {
+      "id" : "_IIe_0n8aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Login"
+    }, {
+      "id" : "_IIe_038aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Port"
+    }, {
+      "id" : "_IIe_1H8aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Database"
+    }, {
+      "id" : "_IIe_1X8aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Password"
+    }, {
+      "id" : "_IIe_1n8aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_Server"
+    }, {
+      "id" : "_IIe_138aEfCisq_Xwl1E0g",
+      "name" : "connection_TalendDB_AdditionalParams"
+    } ]
   } ]
 }
