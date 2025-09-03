@@ -2,11 +2,11 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="AWS1" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="AWS1">
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_xbIMIIcyEfCA3ZaCiMXc9g"/>
-    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMIYcyEfCA3ZaCiMXc9g"/>
-    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_xbIMIocyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_xbIMIYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="6543" internalId="_xbIMIocyEfCA3ZaCiMXc9g"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMI4cyEfCA3ZaCiMXc9g"/>
-    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:6cagJekDiaHoxBBgcuDVEwB/EGXrqcMpsa9w4KvbA0re+FPJ" internalId="_xbIMJIcyEfCA3ZaCiMXc9g"/>
-    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_xbIMJYcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:bmrEbZUJQx5gi1fbOJEt/DSNlR4hAX2LBCTrR46WD7cHhJ9434tnIz/34sja" internalId="_xbIMJIcyEfCA3ZaCiMXc9g"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="aws-1-eu-north-1.pooler.supabase.com" internalId="_xbIMJYcyEfCA3ZaCiMXc9g"/>
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_xbIMJocyEfCA3ZaCiMXc9g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_xbIMJ4cyEfCA3ZaCiMXc9g"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_xbIMKIcyEfCA3ZaCiMXc9g"/>
@@ -1403,7 +1403,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
@@ -1444,7 +1444,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>

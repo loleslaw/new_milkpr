@@ -10,11 +10,11 @@
     <contextParameter comment="" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_mzFg0IEbEfCVU5dXin_oQA"/>
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_duGLkIJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duGLkYJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duGLkoJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:jE+DJErFMgmqfYu9ISxvSqU1ty+vuVJ5aq/LGmoSOCPb53EA" internalId="_duGLk4J2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_duGLlIJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_duGLkoJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:5xsInwbwyBoRYI1CFNpbvrHADVgYb8NRI5IW3UHIr94FA6m1KbYy8H7EXZi5" internalId="_duGLk4J2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="6543" internalId="_duGLlIJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_duGLlYJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_duGLloJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="aws-1-eu-north-1.pooler.supabase.com" internalId="_duGLloJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_duGyoIJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duGyoYJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duGyooJ2EfCMPdM-WdS-sg"/>
@@ -46,11 +46,11 @@
     <contextParameter comment="" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_mzFg0IEbEfCVU5dXin_oQA"/>
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_duIAxoJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duIAx4J2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duIAyIJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:v3eWFg8e6e8U9VebKVPSxleWm/k/goGtp9qJnRmkM291aIJf" internalId="_duIn0IJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_duIn0YJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_duIAyIJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:ZQZJW1MFJUn3IXc50HF0E92JQ6ZAis9MiXOdlvPDNFDGQo1YNo+Ns+KNjUJe" internalId="_duIn0IJ2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="6543" internalId="_duIn0YJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_duIn0oJ2EfCMPdM-WdS-sg"/>
-    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_duIn04J2EfCMPdM-WdS-sg"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="aws-1-eu-north-1.pooler.supabase.com" internalId="_duIn04J2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_duIn1IJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duIn1YJ2EfCMPdM-WdS-sg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_duIn1oJ2EfCMPdM-WdS-sg"/>
@@ -3045,7 +3045,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
@@ -3076,7 +3076,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
