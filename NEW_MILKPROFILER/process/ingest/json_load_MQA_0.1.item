@@ -30,7 +30,7 @@
     <contextParameter comment="Samples MFA" name="param_templateID" prompt="param_templateID?" promptNeeded="false" repositoryContextId="_fFhocII9EfCMPdM-WdS-sg" type="id_Integer" value="3" internalId="_yZlVKYi2EfC1wuoIx9IbYA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="MQA_2">
-    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_yZlVKoi2EfC1wuoIx9IbYA"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_yZlVKoi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_yZlVK4i2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_yZlVLIi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:yOAL8Fni+b38um5TLEFnER+TKddpuaMVL9pKP8PvQg2qSwOqQIlTuF3C6H9T" internalId="_yZlVLYi2EfC1wuoIx9IbYA"/>
@@ -59,7 +59,7 @@
     <contextParameter comment="Samples MFA" name="param_templateID" prompt="param_templateID?" promptNeeded="false" repositoryContextId="_fFhocII9EfCMPdM-WdS-sg" type="id_Integer" value="3" internalId="_yZlVRIi2EfC1wuoIx9IbYA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
-    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_yZlVRYi2EfC1wuoIx9IbYA"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_yZlVRYi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_yZlVRoi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_yZlVR4i2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:yGqbp/FwufYZkeX4RAE6c0OBfnL28lUbzSvHjBhmc0Ar/dpHdrb2YleoaOwR" internalId="_yZlVSIi2EfC1wuoIx9IbYA"/>
@@ -88,7 +88,7 @@
     <contextParameter comment="Samples MFA" name="param_templateID" prompt="param_templateID?" promptNeeded="false" repositoryContextId="_fFhocII9EfCMPdM-WdS-sg" type="id_Integer" value="3" internalId="_yZlVX4i2EfC1wuoIx9IbYA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="AWS1">
-    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="" internalId="_yZlVYIi2EfC1wuoIx9IbYA"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_yZlVYIi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_yZlVYYi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres.nilxiiadhcppyeuhthkv" internalId="_yZlVYoi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:TyuqIurV2qOTklY0Xogj1lqG58XwNGEUld9PmM0ku163hLGxXGcZgn3gdDSz" internalId="_yZlVY4i2EfC1wuoIx9IbYA"/>

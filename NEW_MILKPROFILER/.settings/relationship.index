@@ -479,11 +479,4 @@
     "version" : "Latest",
     "type" : "property"
   } ]
-}, {
-  "baseItem" : {
-    "id" : "_MCvKgIFtEfCD4qhcCMoOpQ",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ ]
 } ]
