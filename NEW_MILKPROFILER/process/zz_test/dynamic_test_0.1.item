@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="DEV">
-    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="0" internalId="_UGxxYIAYEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="3" internalId="_UGxxYIAYEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_UGxxYYAYEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_UGxxYoAYEfC3WpHgZCYyGQ"/>
-    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_UGxxY4AYEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_UGxxY4AYEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:iRakWqVqyJo72H4cQ/fscvx+888JxroXun9khEDIgNl46zX1" internalId="_UGxxZIAYEfC3WpHgZCYyGQ"/>
-    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_UGxxZYAYEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.106" internalId="_UGxxZYAYEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_UGxxZoAYEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Fluk8IAnEfC3WpHgZCYyGQ"/>
   </context>
@@ -157,7 +157,6 @@
       <elementValue elementRef="TRIM" value="false" id="5"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_image" name="tDBInput_1">
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -170,7 +169,6 @@
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.sampleId = input_row.sampleId;&#xD;&#xA;output_row.imageId = input_row.imageId;&#xD;&#xA;output_row.data = ((input_row.data).toString()).replaceAll(&quot; - &quot;, &quot;~&quot;);&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="clear Data"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_image" name="tJavaRow_1">
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -201,8 +199,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sample_image" name="tLogRow_1">
       <column comment="" key="false" length="-1" name="sampleId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -223,8 +219,6 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -250,8 +244,6 @@
       <elementValue elementRef="ARRAY" value="" id="3"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRowGenerator_1">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -262,8 +254,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.dataHeaders = &quot;height~thumbnail~url~width&quot;;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
@@ -278,8 +268,6 @@
     <elementParameter field="TABLE" name="CONFLICT_TABLE" show="false"/>
     <elementParameter field="CHECK" name="TSWOOSH" value="false"/>
     <elementParameter field="CHECK" name="FILTER_MASTER_RECORD" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRuleSurvivorship_1">
       <column defaultValue="" key="false" length="0" name="SURVIVOR" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
