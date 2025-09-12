@@ -33,6 +33,39 @@
     <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
     <contextParameter comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_8BxsIIEbEfCVU5dXin_oQA"/>
   </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_1Wfgc38ZEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_wJ5aEI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_wJ5aEY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:hheVhD6AYYaVcoIl6LepVNoYD9U569to5tx5MJ36bsHz8e40" internalId="_wJ5aEo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.106" internalId="_wJ5aE48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="3" internalId="_wJ5aFI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wJ5aFY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wJ5aFo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wJ5aF48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_wJ5aGI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Schema" prompt="connection_TalendDB_Schema?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="talend_jobs" internalId="_wJ5aGY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Port" prompt="connection_TalendDB_Port?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wJ5aGo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_wJ5aG48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:8ChQTGutH2sJSY71oDQBZZupr3R0/OjnZymmGcA4TPN7+a76" internalId="_wJ5aHI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Database" prompt="connection_TalendDB_Database?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wJ5aHY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="Tests MFA" name="testTemplateId" prompt="testTemplateId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2" internalId="_1xqmcH9OEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="Samples MFA" name="sampleTemplateId" prompt="sampleTemplateId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1" internalId="_vOL_sIEtEfCbXqnIIhpM-w"/>
+    <contextParameter comment="" name="metaFileNames" prompt="metaFileNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0H9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileTypes" prompt="metaFileTypes?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0X9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileIds" prompt="metaFileIds?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0n9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="sampleId" prompt="sampleId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" internalId="_3JLlAH_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleNames" prompt="sampleNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAX_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleValues" prompt="sampleValues?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAn_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_8BxsIIEbEfCVU5dXin_oQA"/>
+    <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_wJ5aHo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wJ5aH48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wJ5aII8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wJ5aIY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:ufPAVL/Trsb7k4ZVtYgw/VaoyCXQItP4aJLuyrbIFxYbvl4z" internalId="_wJ5aIo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_wJ5aI48PEfCVh-UzdhDwAA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -3122,15 +3155,15 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="logx" lineStyle="0" metaname="logx" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_9" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="logx" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="data" lineStyle="0" metaname="data" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_9" target="tDBOutput_5">
+  <connection connectorName="FLOW" label="data" lineStyle="0" metaname="data" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_9" target="tDBOutput_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="data" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="logx" lineStyle="0" metaname="logx" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_9" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="logx" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tHashInput_5">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>

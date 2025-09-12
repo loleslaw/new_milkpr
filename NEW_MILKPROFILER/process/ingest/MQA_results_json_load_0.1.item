@@ -31,7 +31,7 @@
   </context>
   <context confirmationNeeded="false" hide="false" name="MQA_2">
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_yZlVKoi2EfC1wuoIx9IbYA"/>
-    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_yZlVK4i2EfC1wuoIx9IbYA"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_yZlVK4i2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres" internalId="_yZlVLIi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Svjvn416cQ2olGd95Y9n8pgFD3S/MhE8NuebSkHTlS4=" internalId="_yZlVLYi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" internalId="_yZlVLoi2EfC1wuoIx9IbYA"/>
@@ -60,7 +60,7 @@
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_yZlVRYi2EfC1wuoIx9IbYA"/>
-    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_yZlVRoi2EfC1wuoIx9IbYA"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_yZlVRoi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres" internalId="_yZlVR4i2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:0GLF5vFomZez9/7RLzyoFjjF13EtvufMuqmlKgbcJV7HQ4d3" internalId="_yZlVSIi2EfC1wuoIx9IbYA"/>
     <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" internalId="_yZlVSYi2EfC1wuoIx9IbYA"/>
@@ -1666,7 +1666,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wyjscie" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
@@ -1707,7 +1707,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>

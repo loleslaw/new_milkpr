@@ -38,8 +38,8 @@
     <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_j7iGgYMsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_j7iGgoMsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_j7iGg4MsEfCQDd4Eo41mSg"/>
-    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.106" internalId="_j7iGhIMsEfCQDd4Eo41mSg"/>
-    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_j7iGhYMsEfCQDd4Eo41mSg"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_j7iGhIMsEfCQDd4Eo41mSg"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_j7iGhYMsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:G4bALH0Idbsxb89IJWW/7gHl4PnbhakUWsQD4SIDqe0FOpBE" internalId="_j7iGhoMsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_j7iGh4MsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_j7iGiIMsEfCQDd4Eo41mSg"/>
@@ -65,6 +65,39 @@
     <contextParameter comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:zia2VI0MI0YbXSm1N0Z+wR8a3Y96FYTSzEhin7pV9RoxwPdL" internalId="_j7itk4MsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_j7itlIMsEfCQDd4Eo41mSg"/>
     <contextParameter comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_j7itlYMsEfCQDd4Eo41mSg"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_1Wfgc38ZEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Yk+NpMemPJ2oAG5734g2VePk0q7MlbDUmQZ74tByoBPxDc8+" internalId="_1Wfgdn8ZEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_AdditionalParams" prompt="connection_MilkProfilerDb_AdditionalParams?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="" internalId="_wMYtYI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Database" prompt="connection_MilkProfilerDb_Database?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_wMYtYY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Password" prompt="connection_MilkProfilerDb_Password?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:hheVhD6AYYaVcoIl6LepVNoYD9U569to5tx5MJ36bsHz8e40" internalId="_wMYtYo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Server" prompt="connection_MilkProfilerDb_Server?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="10.30.3.106" internalId="_wMYtY48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Schema" prompt="connection_MilkProfilerDb_Schema?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="3" internalId="_wMYtZI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Port" prompt="connection_MilkProfilerDb_Port?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wMYtZY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_MilkProfilerDb_Login" prompt="connection_MilkProfilerDb_Login?" promptNeeded="false" repositoryContextId="_niXpQH8ZEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wMYtZo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Login" prompt="connection_TalendDB_Login?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wMYtZ48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Server" prompt="connection_TalendDB_Server?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_wMYtaI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Schema" prompt="connection_TalendDB_Schema?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="talend_jobs" internalId="_wMYtaY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Port" prompt="connection_TalendDB_Port?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wMYtao8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_AdditionalParams" prompt="connection_TalendDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="" internalId="_wMYta48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Password" prompt="connection_TalendDB_Password?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:8ChQTGutH2sJSY71oDQBZZupr3R0/OjnZymmGcA4TPN7+a76" internalId="_wMYtbI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_TalendDB_Database" prompt="connection_TalendDB_Database?" promptNeeded="false" repositoryContextId="_IH0RcH8aEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wMYtbY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="Tests MQA" name="testTemplateId" prompt="testTemplateId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4" internalId="_1xqmcH9OEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="Samples MQA" name="sampleTemplateId" prompt="sampleTemplateId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3" internalId="_vOL_sIEtEfCbXqnIIhpM-w"/>
+    <contextParameter comment="" name="metaFileNames" prompt="metaFileNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0H9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileTypes" prompt="metaFileTypes?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0X9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="metaFileIds" prompt="metaFileIds?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_THmB0n9TEfCTO_YVdZ_FiA"/>
+    <contextParameter comment="" name="sampleId" prompt="sampleId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" internalId="_3JLlAH_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleNames" prompt="sampleNames?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAX_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="sampleValues" prompt="sampleValues?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_3JLlAn_oEfCf4L0rdgk_Tw"/>
+    <contextParameter comment="" name="dataHeaders" prompt="dataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__HrH8IAcEfC3WpHgZCYyGQ"/>
+    <contextParameter comment="" name="formatDate" prompt="formatDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyy-MM-dd HH:mm:ss" internalId="_8BxsIIEbEfCVU5dXin_oQA"/>
+    <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_wMYtbo8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wMYtb48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wMYtcI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wMYtcY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_wMYtco8PEfCVh-UzdhDwAA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -3064,6 +3097,10 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBCommit_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="source_composit_id" id="0"/>
@@ -3080,14 +3117,15 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="idMap" lineStyle="0" metaname="idMap" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tHashOutput_3">
+  <connection connectorName="FLOW" label="test_data" lineStyle="0" metaname="test_data" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tMap_10">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="idMap" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="test_data" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="sampleParams" lineStyle="0" metaname="sampleParams" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tHashOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -3105,15 +3143,10 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="sampleParams" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="test_data" lineStyle="0" metaname="test_data" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_4" target="tMap_10">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="id" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="idMap" lineStyle="0" metaname="idMap" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_4" target="tHashOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="test_data" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="idMap" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3288,6 +3321,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJava_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJavaRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="labTestId" id="0"/>
@@ -3300,10 +3337,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJava_2">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3367,7 +3400,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
@@ -3398,7 +3431,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>

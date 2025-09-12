@@ -16,6 +16,22 @@
     <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="milkdb" internalId="_1aGw-H8gEfCisq_Xwl1E0g"/>
     <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:emWXaIE3QzZeaIZCVCaW12GKVkeWsAQ3Ru5uzCgk0cZh75Cu" internalId="_1aGw-X8gEfCisq_Xwl1E0g"/>
   </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="LAB_db_Schema" prompt="LAB_db_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lab" internalId="_1aGJ4H8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_Login" prompt="LAB_db_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres" internalId="_1aGJ4X8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_Port" prompt="LAB_db_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" internalId="_1aGJ4n8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_Database" prompt="LAB_db_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres" internalId="_1aGJ438gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_Password" prompt="LAB_db_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:+BCnFrXRA++jna2RhwAc8pSFtbIrAvlP0Y07kovNR/e7qPKF" internalId="_1aGw8H8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_Server" prompt="LAB_db_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.30.3.21" internalId="_1aGw8X8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="LAB_db_AdditionalParams" prompt="LAB_db_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_1aGw8n8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_LabDb_AdditionalParams" prompt="connection_LabDb_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prepareThreshold=0&amp;reWriteBatchedInserts=true&amp;autosave=always" internalId="_1aGw9n8gEfCisq_Xwl1E0g"/>
+    <contextParameter comment="" name="connection_LabDb_Schema" prompt="connection_LabDb_Schema?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="lab" internalId="_wCUycI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Login" prompt="connection_LabDb_Login?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wCUycY8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Port" prompt="connection_LabDb_Port?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="5432" internalId="_wCUyco8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Database" prompt="connection_LabDb_Database?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="postgres" internalId="_wCUyc48PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Password" prompt="connection_LabDb_Password?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_Password" value="enc:system.encryption.key.v1:ufPAVL/Trsb7k4ZVtYgw/VaoyCXQItP4aJLuyrbIFxYbvl4z" internalId="_wCUydI8PEfCVh-UzdhDwAA"/>
+    <contextParameter comment="" name="connection_LabDb_Server" prompt="connection_LabDb_Server?" promptNeeded="false" repositoryContextId="_84crcH8YEfCisq_Xwl1E0g" type="id_String" value="10.30.3.21" internalId="_wCUydY8PEfCVh-UzdhDwAA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>

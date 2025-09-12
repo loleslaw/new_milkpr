@@ -6,4 +6,5 @@
   <contextParameter xmi:id="_3f2EoIJxEfCMPdM-WdS-sg" comment="" name="param_metaParamHeaders" prompt="param_metaParamHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_uxI9MIJzEfCMPdM-WdS-sg" comment="" name="param_metaDataHeaders" prompt="param_metaDataHeaders?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_XwSbQIJ0EfCMPdM-WdS-sg" comment="" name="param_metaDataSQL" prompt="param_metaDataSQL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_DWBBsI-1EfC_y9AyM0HvCA" comment="" name="metaFileNames" prompt="metaFileNames?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
